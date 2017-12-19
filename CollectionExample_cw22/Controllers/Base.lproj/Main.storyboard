@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,10 +31,42 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Fruit" id="B7q-HW-bNz"/>
+                    <connections>
+                        <segue destination="PCq-1M-26j" kind="show" identifier="showDetails" id="gZV-EG-FCK"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WpM-KS-tWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1393" y="-203"/>
+            <point key="canvasLocation" x="1233" y="-204"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="fHC-qh-7gj">
+            <objects>
+                <viewController id="PCq-1M-26j" customClass="DetailsViewController" customModule="CollectionExample_cw22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RZn-fg-jNo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LO2-6R-fpM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LO2-6R-fpM" firstAttribute="leading" secondItem="Y8Q-Zq-a5k" secondAttribute="leading" id="D8L-NX-dzg"/>
+                            <constraint firstItem="Y8Q-Zq-a5k" firstAttribute="bottom" secondItem="LO2-6R-fpM" secondAttribute="bottom" id="HOq-EI-0LX"/>
+                            <constraint firstItem="LO2-6R-fpM" firstAttribute="top" secondItem="Y8Q-Zq-a5k" secondAttribute="top" id="Ub2-W9-t4u"/>
+                            <constraint firstItem="Y8Q-Zq-a5k" firstAttribute="trailing" secondItem="LO2-6R-fpM" secondAttribute="trailing" id="p2s-7A-Cg9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y8Q-Zq-a5k"/>
+                    </view>
+                    <connections>
+                        <outlet property="ibImageView" destination="LO2-6R-fpM" id="xUj-2J-BeK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxt-za-K8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2289" y="-205"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Sog-BK-ReQ">
