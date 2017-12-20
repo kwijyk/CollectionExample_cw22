@@ -43,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		880AA1921FEA54A400D21887 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				8879AF871FE9596E00FDF936 /* CollectionViewController.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		880AA1931FEA54C500D21887 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				8879AF971FE971D600FDF936 /* DetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		8879AF671FE93C1600FDF936 = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +89,8 @@
 		8879AF891FE95A2600FDF936 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8879AF871FE9596E00FDF936 /* CollectionViewController.swift */,
-				8879AF971FE971D600FDF936 /* DetailsViewController.swift */,
+				880AA1921FEA54A400D21887 /* Collection */,
+				880AA1931FEA54C500D21887 /* Details */,
 				8879AF771FE93C1700FDF936 /* Main.storyboard */,
 			);
 			path = Controllers;
